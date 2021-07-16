@@ -20,11 +20,6 @@ public class MouseMove {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
-
-
-
 
 }
