@@ -19,7 +19,7 @@ public class WindowBox extends JFrame {
 
         setSize(400, 200);
 
-        myMouseListener listener = new myMouseListener();
+        //myMouseListener listener = new myMouseListener();
 
         jl.setText("이것은 그저 마우스를 주기적으로 움직이는 프로그램이다.");
         jl.setFont(new Font("바탕체", Font.PLAIN, 14));
