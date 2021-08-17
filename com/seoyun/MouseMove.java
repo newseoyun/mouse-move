@@ -9,14 +9,14 @@ public class MouseMove {
         new WindowBox();
 
         try {
-            while (true) {
-                Robot robot = new Robot();
+            Robot robot = new Robot();
 
-                robot.mouseMove(100, 100);
-                robot.delay(5000);
-                robot.mouseMove(300, 100);
-                robot.delay(5000);
-            }
+            while (true) {
+                PointerInfo pInfo = MouseInfo.getPointerInfo();
+                robot.mouseMove(pInfo.getLocation().x + 1, pInfo.getLocation().y);
+                robot.mouseMove(pInfo.getLocation().x, pInfo.getLocation().y);
+                robot.delay(3000);
+                }
         } catch (Exception e) {
             e.printStackTrace();
         }
