@@ -16,7 +16,7 @@ public class MouseMove {
                 robot.mouseMove(pInfo.getLocation().x + 1, pInfo.getLocation().y);
                 robot.mouseMove(pInfo.getLocation().x, pInfo.getLocation().y);
                 robot.delay(3000);
-                }
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
